@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+<title>Main-Store</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="CSS/generate-product-code.css" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-default navbar-static-top " role="banner">
+			<div class="container">
+
+
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="login.html">M.R. Foods</a>
+					</div>
+				</div>
+
+				<div class="navbar-collapse collapse ">
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active"><a href="main-store.html">Store </a></li>
+							<li><a href="#">Kitchen</a></li>
+							<li><a href="#">Dispatch</a></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Sign Out</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav side-nav templatemo-sidebar-menu">
+					<li><a href="supplier.html"> Supplier</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="daily-report.html">Report</a></li>
+					<li><a href="store-daily-data.html">Input Data</a></li>
+
+					<li class="sub-open">
+						<button type="button" class="btnn " data-toggle="collapse"
+							data-target="#demo">
+							Generate Code <span class="caret"></span>
+						</button>
+						<ul id="demo" class=" list-unstyled ">
+
+							<li><a href="generate-product-code.html">Product Code</a></li>
+
+
+
+
+						</ul>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+
+
+		<div class="jumbotron">
+	
+
+			<form class="form-horizontal" action="main-store.html" >
+				<input type='hidden' />
+
+
+				<div class="form-group" >
+					<label for="date" class=" col-md-5 ">Date </label>
+					<div class="controls col-md-6 ">
+						<input type="text" class="form-control" id="widthrate" name="date"
+							placeholder="DD.MM.YYYY">
+
+					</div>
+				</div>
+				<br />
+				<div class="form-group ">
+					<label for="date" class=" col-md-5">Product Name </label>
+					<div class="controls col-md-6">
+						<input type="text" class="form-control" id="widthrate"
+							placeholder="Product Name">
+					</div>
+				</div>
+				<br />
+
+				<div class="form-group required">
+					<label for="date" class=" col-md-5 ">Product Sub-Group </label>
+					<div class="controls col-md-6">
+						<input type="text" class="form-control" id="widthrate"
+							placeholder="Product Sub-Group">
+					</div>
+				</div>
+				<br />
+
+
+
+				<div class="form-group ">
+					<div class="controls col-md-7">
+						<div class="col-sm-offset-6 col-sm-6">
+							<a href="store-daily-data.html"><input type="submit"
+								value="Submit" class="form-control" onclick="generateCodeP()"></a>
+						</div>
+
+					</div>
+				</div>
+
+
+			</form>
+			<script src="js/generateCode.js"></script>
+			<script src="js/date.js" type="text/javascript"></script>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default navbar-footer navbar-fixed navbar-fixed-bottom">
+		<div id="footer">
+
+			<p class="footer-block">Powered by GOLDFINCH</p>
+		</div>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,3 @@
+$('#insightList').multiselect({
+  enableClickableOptGroups: true
+});

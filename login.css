@@ -1,0 +1,155 @@
+.menu {
+	font-size:12px;
+	float:right;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+.navbar-header {
+ font-size:18px;
+	float:left;
+	text-transform:uppercase;
+	font-weight:600;	
+	 color: rgb(127,127,127); 
+}
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 0px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.nav-tabs > li > a:hover {
+	color:#272727;
+	background:#fff;	
+} 
+
+
+	body {
+	position: centre;	
+	  overflow:scroll;
+	 background-color: rgb(235,235,235);
+	
+}
+
+.btn-primary{
+	margin-right:35px;
+	margin-left:35px;
+	
+	
+}
+
+.table-condensed{
+ 
+   vertical-align: middle;
+   text-align: center;
+}
+.table th{
+    
+   vertical-align: middle;
+   text-align: center;
+   padding-top:1px;
+
+}
+.table {
+    
+   vertical-align: middle;
+   text-align: center;
+    height:20%;
+
+}
+.table td {
+    
+  
+   line-height: 4px; 
+
+}
+#container{
+	margin-top:100px;
+	
+	margin-left:400px;
+	
+}
+
+.table-condensed th{
+	
+	text-align: center;
+	
+}
+.row.col-sm.4{
+	
+	margin-left:50px;
+}
+.gyl{
+	line-height:18px;
+}
+.side-nav {
+        position: fixed;
+        top: 51px;
+        left: 200px;
+        width: 170px;
+        margin-left: -200px;
+        border: none;
+        border-radius: 0;
+        overflow-y: hidden;
+        background-color:FFFFFF;
+        bottom: 35px;
+        overflow-x: hidden;
+        padding-bottom: 20px;
+    }
+/*----width betwwn side bar elements---*/
+    .side-nav>li>a {
+        width: 220px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #F8F8F8;
+    }
+}
+
+
+.side-nav>li>ul>li>a:hover {
+    color: ;
+}
+
+#bottom {
+	border-bottom: 1px solid #ccc;
+	 margin-left:170px;
+}
+
+.con1
+{
+	margin-top:80px;
+	margin-right:80px;
+}
+
+.navbar-footer{
+	
+	 position: fixed;
+	height: 30px;
+	width: 100%;
+	bottom: 0;
+	
+	
+}
+.footer-block{
+	
+	 text-align: right;
+	 margin-top: 10px;
+}
+
+
+
+.templatemo-signin-form {
+    padding-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}

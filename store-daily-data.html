@@ -1,0 +1,593 @@
+<html lang="en">
+<head>
+<title>Main-Store</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="CSS/store-daily-data.css" rel="stylesheet" />
+
+
+
+<script type="text/javascript" src="http://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>
+
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+	
+</head>
+<body>
+
+		<header id="header">
+		<nav class="navbar navbar-default navbar-static-top " role="banner">
+			<div class="container">
+
+
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="login.html">M.R. Foods</a>
+					</div>
+				</div>
+
+				<div class="navbar-collapse collapse ">
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active"><a href="main-store.html">Store </a></li>
+							<li><a href="#">Kitchen</a></li>
+							<li><a href="#">Dispatch</a></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Sign Out</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav side-nav templatemo-sidebar-menu">
+					<li><a href="supplier.html"> Supplier</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="daily-report.html">Report</a></li>
+					<li><a href="store-daily-data.html">Input Data</a></li>
+
+				
+						
+						
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<form class="form-inline" role="form" name="form" method="get">
+
+		<div class="form-group">
+			<label for="date">Date:</label> <input type="text"
+				class="form-control" id="widthform"  name="date" placeholder="DD.MM.YYYY">
+		</div>
+
+
+		<div class="form-group">
+			<label for="date">Bill No:</label> <input type="text"
+				class="form-control" id="widthform" placeholder="Bill No">
+		</div>
+
+
+
+		<div class="form-group">
+			<label for="supplier">Supplier:</label> <select class="form-control"
+				id="widthform">
+				<option>None Selected</option>
+				<option>National Food Products</option>
+				<option>Devendra Cottage Industry</option>
+				<option>Jolly Trade Linkes</option>
+				<option>Noble Mercantile</option>
+				<option>Cee Emm Agencies</option>
+				<option>Yodel Enterprises</option>
+			</select>
+
+		</div>
+
+
+
+		<!-- <div class="form-group" id="products">
+				<label  for="supplier">Products:</label>
+    		
+				   <select class="form-control" id="insightList" multiple="multiple"  >
+       <option value="Almond">Pizza Cheese</option>
+       <option value="Refined-oil">Amul Cheese</option>
+        <option value="Sugar">WHite Butter</option>
+       <option value="Milk">Milk</option>
+      <option value="Eggs">Eggs</option>
+      <option value="Eggs">Maida</option>
+      <option value="Kitkat">Pizza Cheese</option>
+       <option value="Kishmish">Amul Cheese</option>
+   	
+    
+  </select>
+  <script src="js/multiselect.js"></script>
+  </div> -->
+
+
+
+
+
+		<div class="container">
+			<div class="jumbotron">
+			
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond</option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju</option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar </option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				
+		
+		
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="sub-product" name="sub-product">
+						<option value="Confectionary">Confectionary</option>
+						<option value="Bakery">Bakery</option>
+						<option value="Cookies">Cookies</option>
+						<option value="Snacks">Snacks</option>
+						<option value="Staff">Staff</option>
+						<option value="Dispatch">Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label>
+					 <select class="form-control" id="unit" name="unit">
+						<option value="Kg">Kg</option>
+						<option value="Ltr">Ltr</option>
+						<option value="Nos">Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label>
+					 <input id="width" type="text" value=""  name="Qty">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm" >Unit Rate :</label> 
+					<input id="widthrate" type="text" value="" name="Unit-Rate">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label>
+					 <input id="widthrate" type="text" value="" name="amount">
+				</div>
+
+
+
+
+				<br>
+
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar</option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<br>
+
+				
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar</option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+
+				<br>
+
+			
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar</option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<br>
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar</option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<br>
+			
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar</option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+
+				</div>
+
+
+				<br>
+				
+				<div class="form-group" id="products">
+					<label for="supplier">Product :</label> <select
+						class="form-control" id="Product" name="product">
+						<option value="Almond">Almond </option>
+						<option value="Eggs">Eggs </option>
+						<option value="Kaju">Kaju </option>
+						<option value="Milk">Milk </option>
+						<option value="Sugar">Sugar </option>
+						<option value="Milk Poweder">Milk Poweder </option>
+						<option value="Besan">Besan </option>
+						<option value="Kitkat">Kitkat </option>
+						<option value="Kishmish">Kishmish </option>
+
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Sub Cat :</label> <select
+						class="form-control" id="Product">
+						<option>Confectionary</option>
+						<option>Bakery</option>
+						<option>Cookies</option>
+						<option>Snacks</option>
+						<option>Staff</option>
+						<option>Dispatch</option>
+					</select>
+
+				</div>
+				<div class="form-group" id="products">
+					<label for="supplier">Unit :</label> <select class="form-control"
+						id="Product">
+						<option>Kg</option>
+						<option>Ltr</option>
+						<option>Nos</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group " id="products">
+					<label for="inputsm">Qty :</label> <input id="width" type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Unit Rate :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+				<div class="form-group inputsm" id="products">
+					<label for="inputsm">Amount :</label> <input id="widthrate"
+						type="text">
+				</div>
+
+
+
+				<div class="form-group inputsm" id="totalmaount">
+					<label for="inputsm">Total Amount :</label> <input id="widthrates"
+						type="text">
+				</div>
+				<div class="form-group" id="button">
+					<input type="submit" value="Ok" class="btn btn-default"
+						onclick="return getConfirmation();">
+
+
+				</div>
+
+				<button type="button" class="btn btn-default" data-toggle="modal"
+					data-target="#myModal" onclick="getUrlVars()">submit</button>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Confirm Values</h4>
+							</div>
+							<div class="modal-body">
+								<p id="one"> </p>
+								<p id="two"></p>
+								<p id="three"></p>
+								<p id="four"></p>
+								<p id="five"></p>
+								<p id="six"></p>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- jumbo -->
+			</div>
+			<!-- container -->
+	</form>
+
+		
+	<script src="js/confirmation.js"></script>
+	<script src="js/date1.js" ></script>
+	<nav class="navbar navbar-default navbar-footer navbar-fixed navbar-fixed-bottom">
+		<div id="footer">
+
+			<p class="footer-block">Powered by GOLDFINCH</p>
+		</div>
+	</nav>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+  <title>Daily-Report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="CSS/daily-report.css" rel="stylesheet" />	
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-default navbar-static-top " role="banner">
+			<div class="container">
+
+
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="login.html">M.R. Foods</a>
+					</div>
+				</div>
+
+				<div class="navbar-collapse collapse ">
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active"><a href="main-store.html">Store </a></li>
+							<li><a href="#">Kitchen</a></li>
+							<li><a href="#">Dispatch</a></li>
+							<li><a
+								href="#">Settings</a></li>
+							<li><a href="#">Sign Out</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+		 <ul class="nav navbar-nav side-nav">
+                      <li><a
+						href="supplier.html">
+							Supplier</a></li>
+					<li><a
+						href="product.html">Products</a></li>
+					<li><a
+						href="daily-report.html">Report</a></li>
+					</ul>		
+                    
+
+	
+	</div>
+	</nav>
+	</header>
+	
+	<div id="bottom">
+	
+		<div class="box-content-right"><h4>Report</h4>
+		<h5 id="one"><script src="js/todays-date.js" type="text/javascript"></script></h5>
+	
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="bootstrap-iso">
+					<div class="container-fluid">
+						<div class="row">
+
+
+
+							<form method="post"
+								action="daily-report-bill.html">
+								<div class="form-group">
+
+									<label class="control-label" for="date">Date</label> <input
+										class="form-control" id="date" name="date"
+										placeholder="DD/MM/YYYY" type="text" />
+								</div>
+								<div class="form-group">
+
+									<button class="btn btn-primary " name="submit" type="submit">Submit</button>
+								</div>
+							</form>
+							<script src="js/date.js" type="text/javascript">
+								
+							</script>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="col-sm-4">
+	
+				<div class="bootstrap-iso">
+					<div class="container-fluid">
+						<div class="row">
+
+
+
+							<form method="post"
+								action="daily-report-bill.html">
+								<div class="form-group">
+
+									<label class="control-label" for="date">Start Date</label> <input
+										class="form-control" id="date" name="date"
+										placeholder="DD/MM/YYYY" type="text" />
+								</div>
+							</form>
+							<script src="js/date1.js" type="text/javascript">
+								
+							</script>
+
+
+						</div>
+					</div>
+				</div>
+								
+<div class="bootstrap-iso">
+					<div class="container-fluid" >
+						<div class="row">
+						<form method="post" action="daily-report-duration.html">
+								<div class="form-group">
+									<label class="control-label" for="date">End Date</label> <input
+										class="form-control" id="date" name="date"
+										placeholder="DD/MM/YYYY" type="text" />
+								</div>
+								
+								
+								<div class="form-group">
+
+									<button class="btn btn-primary " name="submit" type="submit">Submit</button>
+								</div>
+								
+								
+							</form>
+							<script src="js/date.js" type="text/javascript">
+								
+							</script>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+	<nav class="navbar navbar-default navbar-footer navbar-fixed navbar-fixed-bottom">
+	<div id="footer">
+     
+        <p class="footer-block">Powered by GOLDFINCH</p>	
+     	</div>
+     	</nav>
+   
+
+</body>
+</html>

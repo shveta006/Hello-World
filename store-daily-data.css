@@ -1,0 +1,214 @@
+.menu {
+	font-size:12px;
+	float:right;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+.navbar-header {
+ font-size:18px;
+	float:left;
+	text-transform:uppercase;
+	font-weight:600;	
+	 color: rgb(127,127,127); 
+}
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 0px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+         
+}
+
+.nav-tabs > li > a:hover {
+	color:#272727;
+	background:#fff;	
+} 
+
+
+	body {
+	position: centre;	
+	overflow:scroll;
+	 background-color: rgb(235,235,235);
+	
+}
+.navbar-footer{
+	margin-top: 500px;
+	
+	
+}
+.footer-block{
+	
+	 text-align: right;
+	 margin-top: 10px;
+}
+.btn-primary{
+	margin-right:35px;
+	margin-left:35px;
+	
+	
+}
+
+.table-condensed{
+ 
+   vertical-align: middle;
+   text-align: center;
+}
+.table th{
+    
+   vertical-align: middle;
+   text-align: center;
+   padding-top:1px;
+
+}
+.table {
+    
+   vertical-align: middle;
+   text-align: center;
+    height:20%;
+
+}
+.table td {
+    
+  
+   line-height: 4px; 
+
+}
+
+
+.table-condensed th{
+	
+	text-align: center;
+	
+}
+.row.col-sm.4{
+	
+	margin-left:50px;
+}
+.gyl{
+	line-height:18px;
+}
+.side-nav {
+        position: fixed;
+        top: 51px;
+        left: 200px;
+        width: 120px;
+        margin-left: -200px;
+        border: none;
+        border-radius: 0;
+        overflow-y: hidden;
+        background-color:#FFFFFF;
+        color: rgb(127,127,127); 
+        bottom: 35px;
+        overflow-x: hidden;
+        padding-bottom: 20px;
+    }
+/*----width betwwn side bar elements---*/
+    .side-nav>li>a {
+        width: 220px;
+    }
+
+  
+
+
+
+
+#bottom {
+	border-bottom: 1px solid #ccc;
+	 margin-left:170px;
+}
+
+#container
+{
+	margin-top:110px;
+	margin-left:600px;
+}
+
+.navbar-footer{
+	margin-top: -25px;
+	
+	
+}
+.footer-block{
+	
+	 text-align: right;
+	 margin-top: 10px;
+}
+#container h4{
+	
+}
+.jumbotron{
+
+	margin-top: 1px;
+  padding-top: 10px;
+  margin-left:-60px;
+  margin-right:-150px;
+  
+  
+}
+#demo li a:hover,
+#demo li a:focus{
+   
+      color:#242424;
+    
+}
+#demo li a{
+	color: rgb(127,127,127); 
+	text-decoration: none;
+}
+#demo li {
+   margin-left: 3px;
+     text-align: left;
+      padding-left: 11px;
+    margin-top: 30px;
+}
+	a.btnn{
+	background-color:#FFFFFF;
+	padding-bottom: 10px;
+	
+	}
+.form-inline
+{
+	margin-top:10px;
+	margin-left:150px;
+}
+select{
+	width: 30%;
+	
+}
+#products{
+	margin-top:5px;
+}
+#product{
+	margin-top:5px;
+}
+#insightList{
+	width=20px;
+}
+#width{
+	width: 50px;
+}
+#widthrate
+{
+	width: 80px;
+}
+#button{
+	margin-left:700px;
+}
+#totalmaount{
+	margin-left:600px;
+}
+#widthform
+{
+	width: 180px;
+}
+#widthh
+{
+	width: 180px;
+}
+#widthhh
+{
+	width: 80px;
+}
